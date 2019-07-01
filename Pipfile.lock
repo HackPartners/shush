@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "98a9cfd166abf8b41cadacc595bd9570abe404130444e20327f67b6f4b660001"
+            "sha256": "0379748da852a00cf4c7a776dee8077e372f05d8f66fb21ab67fd08b8fc610c4"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -63,11 +63,11 @@
         },
         "google-cloud-kms": {
             "hashes": [
-                "sha256:2167e1c599ea1d9fed96d317ad817d0b37497460c70f11aafa13a24ede7c9c35",
-                "sha256:59ae637e5ec4fac8c7941cb3392d27a3883275c5d5a1a878d4994003ca8f0a5b"
+                "sha256:556ec619dda81aa4864833cfa15222f9fe3d6095b1eeccda9e2349c97549f67a",
+                "sha256:79476d31d82afbc33c1b82ce4e6e69e6557271b13a666095374ab94e7c27c5aa"
             ],
             "index": "pypi",
-            "version": "==1.0.0"
+            "version": "==1.1.0"
         },
         "google-cloud-storage": {
             "hashes": [
@@ -226,11 +226,11 @@
         },
         "flake8": {
             "hashes": [
-                "sha256:859996073f341f2670741b51ec1e67a01da142831aa1fdc6242dbf88dffbe661",
-                "sha256:a796a115208f5c03b18f332f7c11729812c8c3ded6c46319c59b53efd3819da8"
+                "sha256:2baac1c277d917f3e01ce17a60dcfad4a4ce13a2c5d50a15d0811302a3bdf7aa",
+                "sha256:7eda8e5c29ac9e0d3c0fd44649298c29768efc79a9b872b41c8f05ca5f502c83"
             ],
             "index": "pypi",
-            "version": "==3.7.7"
+            "version": "==3.7"
         },
         "mccabe": {
             "hashes": [
