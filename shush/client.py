@@ -25,7 +25,8 @@ class Client:
 
     @property
     def bucket_name(self) -> str:
-        return f"{self.BUCKET_PREFIX}-{self.project_id}"
+        variables = {"location_id": self.bucket_location, "project_id": self.project_id}
+        return self.bucket_naming.format(**variables)
 
     @property
     def bucket(self) -> Bucket:
@@ -38,15 +39,16 @@ class Client:
         bucket_location: str,
         keyring_location: str,
         credentials: Optional[Credentials] = None,
+        bucket_naming: str = "{location_id}-shush-secrets-{project_id}",
     ):
         self.KEY_NAME = "default"
         self.KEYRING_NAME = "shush-keyring"
-        self.BUCKET_PREFIX = "shush-secrets"
 
         self.project_id = project_id
         self.bucket_location = bucket_location
         self.keyring_location = keyring_location
         self.credentials = credentials
+        self.bucket_naming = bucket_naming
 
         self.gcs_client = storage.Client(
             project=project_id,
